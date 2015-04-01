@@ -1,74 +1,200 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <title>L.K.Minor</title>
-  <meta name="description" content="website description" />
-  <meta name="keywords" content="website keywords, website keywords" />
-  <meta name="google-site-verification" content="lE4gsx-i0AndozEWfv49yXETM5Xh4fm3eU8hIdnfFN4" />
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <!-- modernizr enables HTML5 elements and feature detects -->
-  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Kyle Minor</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/animations.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
-<div id="bg">
-    <img src="images/background.jpg" alt="home" width="100%">
-</div>
-  <div id="main">
-    <header>
-      <div id="logo">
-        <div id="logo_text">
-          <!-- class="logo_colour", allows you to change the colour of the text -->
-          <h1><a href="index.html">Leslie<span class="logo_colour"> Kyle Minor</span></a></h1>
-          <h2>Web Designer</h2>
-        </div>
-      </div>
-      <nav>
-        <div id="menu_container">
-          <ul class="sf-menu" id="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="examples.html">Examples</a></li>
-            <li><a href="page.html">A Page</a></li>
-            <li><a href="another_page.html">Another Page</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <div id="site_content">
-      <div id="sidebar_container">
-        <div class="sidebar">
-          <h3>This is my site!</h3>
-          <h4>New Website Launched</h4>
-          <h5>Feb 28th, 2014</h5>
-          <a href="images/leslieKyleMinor_Resume.pdf">Resume</a>
-        </div>
-      </div>
-      <div class="content">
-        <h1>Welcome to my new website!</h1>
-        <p>Come in and read about me :-)</p>
-      </div>
+    <!-- Side Menu -->
+    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-reorder"></i></a>
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle" onClick="ga('send', '_trackEvent', 'Navbar', 'Toggle', 'Navbar toggle');"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand"><a href="#top">Kyle Minor</a>
+            </li>
+            <li><a href="#about" onClick="ga('send', '_trackEvent', 'Navbar', 'About');">About</a>
+            </li>
+            <li><a href="#portfolio" onClick="ga('send', '_trackEvent', 'Navbar', 'Portfolio');">Portfolio</a>
+            </li>
+            <li><a href="#contact" onClick="ga('send', '_trackEvent', 'Navbar', 'Contact');">Contact</a>
+            </li>
+        </ul>
     </div>
-    <div id="scroll">
-      <a title="Scroll to the top" class="top" href="#"><img src="images/top.png" width="40px" alt="top" /></a>
+    <!-- /Side Menu -->
+
+    <!-- Full Page Image Header Area -->
+    <div id="top" class="header">
+        <div class="vert-text">
+            <div class="expandUp">
+                <h1>
+          <div>Hello,</div>
+          <span class="long-word">I am</span>
+          Kyle Minor.
+        </h1>
+                <h3>Web Developer. QA Specialist. Designer.</h3>
+            </div>
+            <ul class="list-inline spaced">
+                <li><a href="https://github.com/lminor" target="_blank" title="Github" alt="Github" onClick="ga('send', '_trackEvent', 'Links', 'Github', 'Github top');"><i class="fa fa-github fa-3x"></i></a>
+                </li>
+               
+                <li><a href="http://www.linkedin.com/pub/leslie-minor/33/463/505/en" target="_blank" title="LinkedIn" alt="LinkedIn" onClick="ga('send', '_trackEvent', 'Links', 'LinkedIn', 'LinkedIn top');"><i class="fa fa-linkedin fa-3x"></i></a>
+                </li>
+                <li><a href="mailto:lkm@lkminor.com" title="Email me" alt="Email me" target="_blank" onClick="ga('send', '_trackEvent', 'Links', 'Email', 'Email top');"><i class="fa fa-envelope-o fa-3x"></i></a>
+                </li>
+                <li><a href="resume.pdf" target="_blank" class="resume space-m" onClick="ga('send', '_trackEvent', 'Links', 'Resume', 'Resume top');">Resumé</a>
+                </li>
+            </ul>
+            <a href="#about" class="btn btn-default btn-lg call-to" onClick="ga('send', '_trackEvent', 'Links', 'What else');">About Me</a>
+
+        </div>
+
     </div>
+    <!-- /Full Page Image Header Area -->
+
+    <!-- Intro -->
+    <div id="about" class="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2  col-md-offset-2 text-center">
+                    <div class="pixelMe toSlideRight" /></div>
+            </div>
+            <div class="col-md-6 text-center">
+                <h2>I love to create.</h2>
+                <!-- <p class="lead">I'm passionate about collaborating on innovation. As a deep thinker and a voracious learner, I love to distill things down to their essence. </p>-->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h3>Technical Summary</h3>
+                <hr>
+                <dl class="dl-horizontal lead">
+                    <dt>Web Development</dt>
+                    <dd>HTML 5, CSS 3, Sass, Bootstrap, JavaScript, jQuery, Backbone, PHP, node, ASP.net, C#</dd>
+                    <dt>Other Languages</dt>
+                    <dd>Java, C++</dd>
+                    <dt>Databases</dt>
+                    <dd>MySQL, MongoDB, Parse</dd>
+                    <dt>Design</dt>
+                    <dd>Photoshop, Illustrator, InDesign</dd>
+                </dl>
+                <a href="#contact" onClick="ga('send', '_trackEvent', 'Links', 'See more');">See more <i class="fa fa-level-down"></i></a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- /Intro -->
+    <div class="call-to-action">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <h2>Recent Work</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio -->
+    <div id="portfolio" class="callout">
+        <hr>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="img/fwcclogo1.gif" alt="...">
+                    <div class="caption">
+                        <h3>Florida Shorebird Database</h3>
+                        <p>Redesigned and developed a scientific research <a href="https://public.myfwc.com/crossdoi/shorebirds/index.html">application</a>. Built in Google Maps and GIS infrastructure.</p>
+                        <p>ASP.net, C#, Javascript</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <div>
+                        <img src="http://ginsystem.com.s3.amazonaws.com/images/logo.png">
+                    </div>
+                    <div class="caption">
+                        <h3>Group Interactive Networks</h3>
+                        <p>Managing AWS and QA for the company. Also implemented the Wordpress front end for our website as well as development for the back end of The <a href="http://ginsystem.com">GINSystem</a>.</p>
+                        <p>PHP, Laravel, Bootstrap, Backbone, Javascript, Ruby</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="http://wedding.minorhome.net/wp-content/uploads/2015/01/image1-e1420240483878-270x250.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Minor Wedding</h3>
+                        <p>Website for guests to get information and RSVP for my wedding. <a href="http://wedding.minorhome.net">Minor Wedding</a>.</p>
+                        <p>Wordpress, jQuery</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Portfolio -->
+
+    <!-- Findoutmore -->
+    <div id="contact" class="call-to-action">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Findoutmore -->
+    <hr>
+
+    <!-- Footer -->
     <footer>
-      <p><a href="https://twitter.com/shadesokman"> <img src="images/twitter.png" alt="twitter" /></a><a href="https://www.facebook.com/ApocalypseV"> <img src="images/facebook.png" alt="facebook" /></a>&nbsp;<a href="#"><img src="images/rss.png" alt="rss" /></a></p>
-      <p><a href="index.html">Home</a> | <a href="examples.html">Examples</a> | <a href="page.html">A Page</a> | <a href="another_page.html">Another Page</a> | <a href="contact.php">Contact Us</a></p>
-      <p>Copyright &copy; Leslie Kyle Minor | <a href="www.lkminor.com">lkminor.com
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <a href="resume.pdf" target="_blank" class="btn btn-lg btn-primary resume toSlideDown" onClick="ga('send', '_trackEvent', 'Links', 'Resume', 'Resume bottom');">Resumé</a>
+
+                    <ul class="list-inline">
+                        <li><a href="https://github.com/lminor" target="_blank" title="Github" alt="Github" onClick="ga('send', '_trackEvent', 'Links', 'Github', 'Github bottom');"><i class="fa fa-github fa-2x"></i></a>
+                        </li>
+                        <li><a href="http://www.linkedin.com/pub/leslie-minor/33/463/505/en" target="_blank" title="LinkedIn" alt="LinkedIn" onClick="ga('send', '_trackEvent', 'Links', 'LinkedIn', 'LinkedIn bottom');"><i class="fa fa-linkedin fa-2x"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled size-m">
+                        <li><i class="fa fa-map-marker"></i> Melrose, Florida</li>
+                        <li><i class="fa fa-envelope-o"></i> <a href="mailto:lkm@lkminor.com" target="_blank" onClick="ga('send', '_trackEvent', 'Links', 'Email', 'Email bottom');">lkm@lkminor.com</a>
+                        </li>
+                    </ul>
+                    <div class="top-scroll">
+                        <a href="#top" title="Back to top" alt="Back to top"><i class="fa fa-angle-double-up scroll fa-4x"></i></a>
+                    </div>
+                    <hr>
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
-  </div>
-  <!-- javascript at the bottom for fast page loading -->
-  <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
-  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('ul.sf-menu').sooperfish();
-      $('.top').click(function() {$('html, body').animate({scrollTop:0}, 'fast'); return false;});
-    });
-  </script>
+    <!-- /Footer -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.scrolldepth.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
